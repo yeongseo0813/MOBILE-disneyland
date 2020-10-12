@@ -1,0 +1,929 @@
+@charset "utf-8";
+html, body {
+    height: 100%;
+    overflow-y: hidden
+}
+
+body {
+    position: relative;
+    min-width: 1200px;
+    font-family: "Dotum", "Arial", sans-serif;
+    font-size: 12px;
+    color: #333;
+    background: white
+}
+
+/*.posNum {*/
+/*    position: fixed;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    width: 300px;*/
+/*    height: 50px;*/
+/*    margin: -25px 0 0 -150px;*/
+/*    background: #111;*/
+/*    color: #fff;*/
+/*    font-size: 20px;*/
+/*    font-weight: bold;*/
+/*    text-align: center;*/
+/*    line-height: 50px;*/
+/*    z-index: 9999*/
+/*}*/
+
+.scrollBox {
+    min-width: 1200px;
+    height: 100%;
+    position: relative
+}
+
+.scrollBox .wrap {
+    min-width: 1200px;
+    position: relative;
+    overflow: hidden
+}
+
+.scrollBox .wrap > div {
+    position: relative
+}
+
+.scrollBox .wrap .objs > li {
+    position: absolute;
+    left: 50%
+}
+
+#header {}
+
+/*--------------------------------------------------------------
+    #header end
+--------------------------------------------------------------*/
+
+
+#scene01 {
+    height: 980px;
+    background: url("../image/top-bg.jpg");
+}
+
+#scene01 .side{
+    width: 202px;
+    height: 980px;
+    background: url("../image/top-side.jpg");
+}
+
+#scene01 .ios{
+    width: 126px;
+    height: 16px;
+    background: url("../image/top-sub-text.png");
+    position: absolute;
+    left: 312px;
+    top: 93px;
+}
+
+#scene01 .app{
+    width: 90px;
+    height: 90px;
+    background: url("../image/app-icon.png");
+    position: absolute;
+    right: 101px;
+    top: 93px;
+}
+
+#scene01 .typo{
+    width: 657px;
+    height: 335px;
+    background: url("../image/top-typo.png");
+    position: absolute;
+    left: 312px;
+    top: 355px;
+}
+
+#top_mockup{
+    width: 444px;
+    height: 823px;
+    position: absolute;
+    left: 1209px;
+    top: 355px;
+}
+
+#top_mockup > img{
+    position: absolute;
+}
+
+#top_mockup > video{
+    width: 320px;
+    height: 660px;
+    background: #fff;
+    position: absolute;
+    left: 9px;
+    top: 55px;
+}
+
+
+/*--------------------------------------------------------------
+    #scene01 end
+--------------------------------------------------------------*/
+
+#scene02 {
+    height: 875px;
+}
+
+#scene02 .typo{
+    position: absolute;
+    left: 410px;
+    top: 174px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene02 .typo.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#scene02 .typo .tit{
+    width: 227px;
+    height: 38px;
+    background: url("../image/overview-title.png");
+}
+
+#scene02 .typo .text{
+    width: 792px;
+    height: 48px;
+    background: url("../image/overview-text.png");
+    position: absolute;
+    left: 306px;
+    top: 10px;
+}
+
+#scene02 .diagram{
+    width: 1613px;
+    height: 452px;
+    background: url("../image/overview-diagram.png");
+    position: absolute;
+    right: 0;
+    bottom: 98px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene02 .diagram.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+    #scene02 end
+--------------------------------------------------------------*/
+
+#scene03 {
+    height: 805px;
+    background: #f4f4f4;
+}
+
+#scene03 .typo{
+    width: 857px;
+    height: 165px;
+    background: url("../image/goal-typo.png");
+    position: absolute;
+    left: 406px;
+    top: 115px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene03 .typo.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#scene03 .diagram{
+    width: 1568px;
+    height: 308px;
+    background: url("../image/goal-diagram.png");
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene03 .diagram.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#scene03 .diagram .text{
+    width: 299px;
+    height: 111px;
+    background: url("../image/goal-diagram-text.png");
+    position: absolute;
+    left: 410px;
+    top: 0;
+}
+
+/*--------------------------------------------------------------
+    #scene03 end
+--------------------------------------------------------------*/
+
+#scene04 {
+    height: 2056px;
+    background: url("../image/main-bg.jpg");
+}
+
+#scene04 .typo{
+    width: 784px;
+    height: 216px;
+    background: url("../image/main-typo.png");
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%) translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene04 .typo.on{
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+#main_mockup{
+    position: absolute;
+    left: 779px;
+    top: 440px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#main_mockup.on{
+    opacity: 1;
+}
+
+#main_mockup > img{
+    position: absolute;
+}
+
+#main_mockup > video{
+    width: 303px;
+    height: 625px;
+    position: absolute;
+    left: 31px;
+    top: 57px;
+}
+
+#main_mockup .ticket{
+    width: 237px;
+    height: 16px;
+    background: url("../image/main-ticket.png");
+    position: absolute;
+    left: 344px;
+    top: 275px;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#main_mockup .ticket.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#main_mockup .bottom{
+    width: 258px;
+    height: 16px;
+    background: url("../image/main-buttom.png");
+    position: absolute;
+    left: -236px;
+    top: 613px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+#main_mockup .bottom.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#scene04 .number{
+    width: 1400px;
+    position: absolute;
+    left: 422px;
+    bottom: 100px;
+}
+
+#scene04 .number .left{
+    width: 379px;
+    height: 720px;
+    background: url("../image/main-login.png");
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene04 .number .center{
+    width: 379px;
+    height: 720px;
+    background: url("../image/main-buyticket.png");
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .3s;
+}
+
+#scene04 .number .right{
+    width: 379px;
+    height: 720px;
+    background: url("../image/main-registration.png");
+    display: inline-block;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .6s;
+}
+
+#scene04 .number.on .left,
+#scene04 .number.on .center,
+#scene04 .number.on .right{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+    #scene04 end
+--------------------------------------------------------------*/
+
+#scene05 {
+    height: 2691px;
+    background: url("../image/wire-bg.jpg");
+}
+
+#scene05 .wire .typo{
+    position: absolute;
+    left: 410px;
+    top: 157px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene05 .wire .typo.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#scene05 .wire .typo .tit{
+    width: 253px;
+    height: 38px;
+    background: url("../image/wire-title.png");
+}
+
+#scene05 .wire .typo .text{
+    width: 678px;
+    height: 49px;
+    background: url("../image/wire-text.png");
+    position: absolute;
+    left: 334px;
+    top: 10px;
+}
+
+#scene05 .frame{
+    width: 1155px;
+    height: 1037px;
+    position: absolute;
+    left: 377px;
+    top: 298px;
+    background: url("../image/wire-frame02.png");
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+#scene05 .frame.on{
+    opacity: 1;
+}
+
+#scene05 .style{
+    position: absolute;
+    left: 410px;
+    top: 1459px;
+}
+
+#scene05 .style .typo{
+    width: 844px;
+    height: 123px;
+    background: url("../image/style-typo.png");
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene05 .style .typo.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#scene05 .style .color{
+    width: 1207px;
+    height: 216px;
+    background: url("../image/style-color.png");
+    position: absolute;
+    left: -44px;
+    top: 200px;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+#scene05 .style .color.on{
+    opacity: 1;
+}
+
+#scene05 .style .type{
+    width: 1100px;
+    height: 391px;
+    background: url("../image/style-type.png");
+    position: absolute;
+    left: 0;
+    top: 604px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+#scene05 .style .type.on{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+    #scene05 end
+--------------------------------------------------------------*/
+
+#scene06 {
+    height: 3253px;
+    background: url("../image/sub-bg.jpg");
+}
+
+#scene06 .s1{
+    position: absolute;
+    left: 502px;
+    top: -108px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene06 .s1.on{
+    opacity: 1;
+}
+
+#scene06 .s1 .menu{
+    width: 441px;
+    height: 805px;
+    background: url("../image/sub-menu.png");
+}
+
+#scene06 .s1 .typo{
+    width: 375px;
+    height: 297px;
+    background: url("../image/sub-menu-typo.png");
+    position: absolute;
+    left: 458px;
+    top: 232px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .7s;
+}
+
+#scene06 .s1.on .typo{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#sub_mockup{
+    position: absolute;
+    left: 410px;
+    top: 681px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#sub_mockup.on{
+    opacity: 1;
+}
+
+#sub_mockup > img{
+    position: absolute;
+    left: 639px;
+    top: 0;
+}
+
+#sub_mockup > video{
+    width: 303px;
+    height: 625px;
+    position: absolute;
+    left: 670px;
+    top: 57px;
+}
+
+#sub_mockup .typo{
+    width: 367px;
+    height: 297px;
+    background: url("../image/sub-filter-typo.png");
+    position: absolute;
+    left: 0;
+    top: 260px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .7s;
+}
+
+#sub_mockup.on .typo{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#scene06 .s3{
+    position: absolute;
+    left: 76px;
+    top: 1536px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene06 .s3.on{
+    opacity: 1;
+}
+
+#scene06 .s3 .map{
+    width: 867px;
+    height: 805px;
+    background: url("../image/sub-map.png");
+}
+
+#scene06 .s3 .typo{
+    width: 369px;
+    height: 297px;
+    background: url("../image/sub-map-typo.png");
+    position: absolute;
+    left: 884px;
+    top: 231px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .7s;
+}
+
+#scene06 .s3.on .typo{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#scene06 .s4{
+    position: absolute;
+    left: 410px;
+    bottom: 123px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene06 .s4.on{
+    opacity: 1;
+}
+
+#scene06 .s4 .search{
+    width: 562px;
+    height: 805px;
+    background: url("../image/sub-search.png");
+    position: absolute;
+    left: 639px;
+    bottom: 0;
+}
+
+#scene06 .s4 .typo{
+    width: 401px;
+    height: 297px;
+    background: url("../image/sub-search-typo.png");
+    position: absolute;
+    left: 0;
+    bottom: 249px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .7s
+}
+
+#scene06 .s4.on .typo{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+    #scene06 end
+--------------------------------------------------------------*/
+
+#scene07 {
+    height: 1104px;
+    background: #2b7dc4;
+}
+
+#scene07 .typo{
+    width: 643px;
+    height: 215px;
+    background: url("../image/att-typo.png");
+    position: absolute;
+    left: 50%;
+    top: 165px;
+    transform: translateX(-50%);
+}
+
+#scene07 .att_theme{
+    width: 1345px;
+    height: 165px;
+    background: url("../image/att_theme.png");
+    position: absolute;
+    left: 242px;
+    bottom: 289px;
+    transform: scale(0.95);
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+#scene07 .att_theme.on{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+#scene07 .att{
+    width: 578px;
+    height: 673px;
+    background: url("../image/att-mockup.png");
+    position: absolute;
+    left: 722px;
+    bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+    #scene07 end
+--------------------------------------------------------------*/
+
+#scene08 {
+    height: 2150px;
+    background: url("../image/detail-bg.jpg");
+}
+
+#scene08 .typo{
+    width: 512px;
+    height: 216px;
+    background: url("../image/detail-typo.png");
+    position: absolute;
+    left: 50%;
+    top: 141px;
+    transform: translateX(-50%) translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene08 .typo.on{
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+#detail_mockup01{
+    position: absolute;
+    left: 502px;
+    top: 433px;
+}
+
+#detail_mockup01 > img{
+    position: absolute;
+}
+
+#detail_mockup01 > video{
+    width: 303px;
+    height: 625px;
+    position: absolute;
+    left: 32px;
+    top: 57px;
+}
+
+#detail_mockup01 .info{
+    width: 244px;
+    height: 45px;
+    background: url("../image/detail-info.png");
+    position: absolute;
+    left: -220px;
+    top: 230px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#detail_mockup01 .info.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#scene08 .d2{
+    position: absolute;
+    left: 1049px;
+    top: 433px;
+}
+
+#scene08 .d2 .card{
+    width: 441px;
+    height: 805px;
+    background: url("../image/detail-card-mockup.png");
+}
+
+#scene08 .d2 .card_typo{
+    width: 247px;
+    height: 49px;
+    background: url("../image/detail-card.png");
+    position: absolute;
+    left: 340px;
+    top: 425px;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .6s;
+}
+
+#scene08 .d2 .card_typo.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#scene08 .d3{
+    position: absolute;
+    left: 502px;
+    bottom: 102px;
+}
+
+#scene08 .d3 .ent{
+    width: 441px;
+    height: 805px;
+    background: url("../image/detail-ent-mockup.png");
+}
+
+#scene08 .d3 .ent_typo{
+    width: 227px;
+    height: 46px;
+    background: url("../image/detail-week.png");
+    position: absolute;
+    left: -210px;
+    bottom: 510px;
+    transform: translateX(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene08 .d3 .ent_typo.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#detail_mockup02{
+    position: absolute;
+    left: 1049px;
+    bottom: 908px;
+}
+
+#detail_mockup02 > img{
+    position: absolute;
+}
+
+#detail_mockup02 > video{
+    width: 303px;
+    height: 625px;
+    position: absolute;
+    left: 31px;
+    top: 57px;
+}
+
+#detail_mockup02 .alarm{
+    width: 271px;
+    height: 19px;
+    background: url("../image/detail-alarm.png");
+    position: absolute;
+    left: 340px;
+    top: 554px;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 1s;
+    transition-delay: .6s;
+}
+
+#detail_mockup02 .alarm.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*--------------------------------------------------------------
+    #scene08 end
+--------------------------------------------------------------*/
+
+#scene09 {
+    height: 1131px;
+    background: #f4f4f4;
+    position: relative;
+}
+
+#scene09 .typo{
+    width: 431px;
+    height: 212px;
+    background: url("../image/ent-typo.png");
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translateX(-50%) translateY(30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#scene09 .typo.on{
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+#ent{
+    position: absolute;
+    left: 391px;
+    top: 470px;
+}
+
+#ent > img{
+    position: absolute;
+}
+
+#ent > video{
+    width: 487px;
+    height: 1005px;
+    position: absolute;
+    left: 47px;
+    top: 92px;
+}
+
+#scene09 .app{
+    width: 206px;
+    height: 210px;
+    background: url("../image/alarm-app-icon.png");
+    position: absolute;
+    right: 581px;
+    top: 739px;
+}
+
+/*--------------------------------------------------------------
+    #scene09 end
+--------------------------------------------------------------*/
+
+
+#footer {
+    height: 2497px;
+    background: url("../image/fin-bg.jpg");
+    position: relative
+}
+
+#footer .all{
+    width: 1615px;
+    height: 2175px;
+    background: url("../image/fin-app.png");
+}
+
+#footer .typo{
+    width: 53px;
+    height: 370px;
+    background: url("../image/fin-typo.png");
+    position: absolute;
+    right: 116px;
+    top: 709px;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+#footer .typo.on{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#footer .thank{
+    width: 616px;
+    height: 255px;
+    background: url("../image/fin-thank.png");
+    position: absolute;
+    left: 50%;
+    bottom: 94px;
+    transform: translateX(-50%);
+}
+
+
